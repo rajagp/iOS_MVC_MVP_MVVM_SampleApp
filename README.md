@@ -13,3 +13,7 @@ The mvp folder contains the Model View Presenter (MVP) version of the app
 The mvvm folder contains the Model View View Model (MVVM) version of the app
 
 
+#License
+MIT License. See LICENSE for details.
+
+
