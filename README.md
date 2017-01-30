@@ -5,6 +5,8 @@ The application accepts search criteria from the user and pulls in movie data us
 - The OMDb API:https://www.omdbapi.com
 - The unit test coverage is not complete but is is enough to get started. When running in test mode, the requests are stubbed out and responses returned from a local file bundled in the app.
 
+![](http://www.priyaontech.com/wp-content/uploads/2017/01/moviedemo.gif)
+
 # Details
 An overview of the patterns is available at http://www.priyaontech.com/2017/01/mvc-mvp-and-mvvm-patterns-on-ios/
 There is also a PDF document (iOS_MVP_MVVM_Patterns.pdf) available in this repo that provides details on how the patterns are implemented in the context of the sample app.
