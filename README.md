@@ -1,5 +1,7 @@
 # Overview
-This repo includes a sample application that demonstrates the MVC, MVP and MVVM architecture patterns on iOS. It is written in Swift 3.0.2. 
+This repo includes a sample application that demonstrates the MVC, MVP and MVVM architecture patterns on iOS. 
+- Xcode 8.3
+- Swift 3.2
 
 The application accepts search criteria from the user and pulls in movie data using the OMDb service based on the seatch criteria. The results are displayed in the app and the user can get more details on a specific title.
 - The OMDb API:https://www.omdbapi.com
