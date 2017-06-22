@@ -281,7 +281,7 @@
 				1CF7ABA21DCE7F0F004FAD5D /* MovieDataViewModel.swift */,
 				1CB8A9D91DEE7DD3001F3A71 /* DynamicType.swift */,
 			);
-			name = ViewModel;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A237F473C7327C926651229D /* Pods */ = {
