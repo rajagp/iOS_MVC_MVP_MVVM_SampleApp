@@ -18,7 +18,9 @@ internal enum ServerRequestRouter: URLRequestConvertible {
         return "https://www.omdbapi.com/"
     }
   
-    
+    static var apiKey:String {
+        return <#Get Key from https://www.patreon.com/posts/api-is-going-10743518 #>
+    }
     case searchByTitle(String,String?,String?,Int)
     case detailsByIMDBID(String)
     
@@ -86,6 +88,7 @@ internal enum ServerRequestRouter: URLRequestConvertible {
                     params["y"] = year as AnyObject
                 }
                 params["page"] = page as AnyObject
+                params["apikey"] = ServerRequestRouter.apiKey as AnyObject
                 let encoding =  URLEncoding(destination: URLEncoding.Destination.queryString)
                 return try encoding.encode(mutableURLRequest, with:params)
                 
@@ -99,6 +102,7 @@ internal enum ServerRequestRouter: URLRequestConvertible {
                 var params:[String:AnyObject] = ["i":id as AnyObject ]
                 params["r"] = "json" as AnyObject
                 params["plot"] = "full" as AnyObject
+                params["apikey"] = ServerRequestRouter.apiKey as AnyObject
                 let encoding =  URLEncoding(destination: URLEncoding.Destination.queryString)
                 return try encoding.encode(mutableURLRequest, with:params)
                 
