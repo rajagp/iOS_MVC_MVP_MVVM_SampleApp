@@ -13,13 +13,21 @@ The application accepts search criteria from the user and pulls in movie data us
 An overview of the patterns is available at http://www.priyaontech.com/2017/01/mvc-mvp-and-mvvm-patterns-on-ios/
 There is also a PDF document (iOS_MVP_MVVM_Patterns.pdf) available in this repo that provides details on how the patterns are implemented in the context of the sample app.
 
-#Repo Structure
+# Repo Structure
 * The *mvc folder* contains the Model View Controller (MVC) version of the app
 * The *mvp folder* contains the Model View Presenter (MVP) version of the app
 * The *mvvm folder* contains the Model View View Model (MVVM) version of the app
 
-
-#License
+# Build
+To query against the OMDb DB, you would have to get an API Key from https://www.patreon.com/posts/api-is-going-10743518
+Once you receive the key, please update the  `ServerManagerRequestRouters.swift` to return the right API Key :
+```
+  static var apiKey:String {
+        return <#Get Key from https://www.patreon.com/posts/api-is-going-10743518 #>
+    }
+ ```
+    
+# License
 MIT License. See LICENSE for details.
 
 
